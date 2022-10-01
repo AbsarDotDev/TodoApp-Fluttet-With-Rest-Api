@@ -31,7 +31,7 @@ addUser(UserModel userModel) async {
   //return Post.fromJson(responseJson);
 
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //now set the token inside the shared_preferences
+  //now set the token inside the shared_preferences Library
   //I assumed that the token is a field in the json response, but check it before!!
   await prefs.setString('auth-token', responseJson['authtoken']);
 }
