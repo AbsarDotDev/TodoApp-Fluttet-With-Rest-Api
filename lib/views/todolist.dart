@@ -147,6 +147,8 @@ class _ToDoListState extends State<ToDoList> {
                                                       .text
                                                       .toString()),
                                           context);
+                                      titleEditingController.clear();
+                                      discriptionEditingController.clear();
                                     });
                                     Navigator.pop(context, true);
                                   },
